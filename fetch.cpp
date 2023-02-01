@@ -8,6 +8,10 @@
 using namespace std;
 
 int main(int argc,char** argv) {
+     if(argc!=2){  //check input
+        cout<<"Please enter an argument";
+        return 0;
+    }
     int total = atoi(argv[1]);  // total points spend
     ifstream inputF;
     inputF.open("transactions.csv");
